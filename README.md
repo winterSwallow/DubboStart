@@ -8,8 +8,9 @@ a simple dubbo project demo
 1. 在根目录新建data文件夹
 1. 打开conf目录，复制zoo_sample.cfg重命名为zoo.cfg
 1. 修改zoo.cfg文件中属性dataDir为刚创建的data路径
-![](https://github.com/winterSwallow/DubboStart/blob/master/images/zoo_cfg.png)
 1. 打开bin目录，双击zkServer.cmd启动zookeeper
+
+![](https://github.com/winterSwallow/DubboStart/blob/master/images/zoo_cfg.png)
 
 二、 springboot集成dubbo
 ===
@@ -26,7 +27,7 @@ a simple dubbo project demo
 ---
 （1）api模块中新增接口服务ApiService.java
 
-![](https://github.com/winterSwallow/DubboStart/blob/master/image/ApiService.png)
+![](https://github.com/winterSwallow/DubboStart/blob/master/images/ApiService.png)
 
 （2）consumer模块中引入api模块和dubbo依赖，resources目录下添加dubbo属性配置，启动类配置@EnableDubbo注解
 
@@ -54,7 +55,7 @@ a simple dubbo project demo
 
 3、测试运行
 ---
-（1）启动consumer和provider
+（1）启动consumer和provider  
 （2）浏览器访问：http://localhost:8062/hello?name=dubbo
 
 ![](https://github.com/winterSwallow/DubboStart/blob/master/images/start_success.png)
